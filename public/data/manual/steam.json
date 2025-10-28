@@ -6,7 +6,28 @@
   "country_code": "us",
   "belongs_to_group": true,
   "group_name": "Valve",
-  "permissions": "",
+  "permissions": {
+    "internet",                        // Accès réseau complet (connexion aux serveurs Steam)
+    "storage",                         // Lecture et écriture sur le stockage local (jeux, captures, logs)
+    "camera",                          // Accès à la caméra (pour le chat vidéo ou diffusion)
+    "microphone",                      // Accès au micro (chat vocal, streaming)
+    "notifications",                   // Envoi de notifications système
+    "background_service",              // Exécution en arrière-plan (mises à jour automatiques)
+    "auto_launch",                     // Lancement automatique au démarrage du système
+    "read_installed_apps",             // Lecture de la liste des jeux/applications installés
+    "file_system_access",              // Accès à certains dossiers système (ex. SteamApps)
+    "network_state",                   // Détection de l’état du réseau (en ligne/hors ligne)
+    "keyboard_input_monitoring",       // Sur macOS : lecture des frappes clavier globales (overlay Steam)
+    "clipboard_read_write",            // Lecture/écriture du presse-papiers (copier-coller dans le chat)
+    "device_info",                     // Lecture d’informations système (GPU, CPU, OS, RAM)
+    "analytics_tracking",              // Collecte de données d’usage à des fins statistiques
+    "account_data_access",             // Accès au compte Steam (identifiant, amis, historique d’achat)
+    "content_download",                // Téléchargement de jeux, patchs et contenus additionnels
+    "in_app_purchase",                 // Paiements intégrés (Steam Wallet, achats en jeu)
+    "crash_reporting",                 // Envoi de rapports d’erreur automatiques à Valve
+    "user_preferences",                // Lecture/écriture des préférences utilisateur (langue, thème, etc.)
+    "update_management"                // Téléchargement et installation automatique des mises à jour
+  }
   "contact_mail_export": "support@steampowered.com",
   "easy_access_data": "3",
   "need_id_card": false,
@@ -15,7 +36,7 @@
   "data_access_via_form": false,
   "data_access_type": "La demande d’accès s’effectue via le support Steam, sur https://help.steampowered.com , rubrique « Mon compte » → « Confidentialité des données » → « Exporter mes données ». L’utilisateur doit être connecté à son compte Steam pour soumettre la demande.",
   "data_access_via_email": true,
-  "response_format": "zip",
+  "response_format": "html",
   "example_data_export": [],
   "example_form_export": [],
   "message_exchange": [],
@@ -32,9 +53,9 @@
   "tosdr": "",
   "exodus": "",
   "created_at": "2025-10-27",
-  "created_by": "Eléonore Le Meut",
-  "updated_at": "",
-  "updated_by": "",
+  "created_by": "LME-2003",
+  "updated_at": "2025-10-28",
+  "updated_by": "LME-2003",
   "app": {
     "name": "Steam",
     "link": "https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.community"
